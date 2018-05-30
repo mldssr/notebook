@@ -17,16 +17,22 @@ slave02 | 10.0.0.4 | jermaine
 最终效果：  
 免密SSH：`ssh slave01`，OK了。
 
-首先slaves要安装`openssh-server`，才能被远程登录。（Ubuntu缺省已经安装了`ssh client`）  
-`sudo apt-get install openssh-server`
+首先slaves要安装`openssh-server`，才能被远程登录。（Ubuntu缺省已经安装了`ssh client`）
+
+    sudo apt-get install openssh-server
 
 ### 公钥登录
-1. master生成密钥  
-`ssh-keygen -t rsa -P ""`
-2. 将master的`~/.ssh/id_rsa.pub`拷贝到每个slave的`~/.ssh/authorized_keys`  
-`ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`  
-等价于  
-`ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub`
+1. master生成密钥
+
+       ssh-keygen -t rsa -P ""
+
+2. 将master的`~/.ssh/id_rsa.pub`拷贝到每个slave的`~/.ssh/authorized_keys`
+
+       ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
+
+ 等价于
+
+       ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 
 ### ssh config
 向`.ssh/config`写入如下配置，这样只要`ssh slave01`就相当于`ssh lxx@10.0.0.2`
@@ -67,9 +73,7 @@ sudo chown -R slave01：slave01 ./spark-2.3.0-bin-hadoop2.7
 ```
 cd /usr/local/spark-2.3.0-bin-hadoop2.7
 cp ./conf/slaves.template ./conf/slaves
-echo master >> conf/slaves
-echo slave01 >> conf/slaves
-echo slave02 >> conf/slaves
+echo -e "master\nslave01\nslave02" >> conf/slaves
 echo "export SPARK_MASTER_HOST=10.0.0.6" >> spark-env.sh
 ```
 
