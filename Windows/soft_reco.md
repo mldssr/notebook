@@ -7,7 +7,7 @@
 ### Adobe Acrobat DC
 ### 微信
 ### QQ or TIM
-### TeamViewer
+### TeamViewer or AnyDesk
 ### Zoom
 
 ---
@@ -53,11 +53,21 @@
 ### Git Bash
 ### GitKraken
 ### Xshell & Xftp
-### MinGW, Java, Phthon
+### MinGW-w64, Java, Phthon, Go
 ### Notepad++
 ### Atom
+插件推荐：
+* highlight-selected
+* linter  
+  代码检查
+* gcc-make-run  
+  一键编译运行C/C++
+* atom-beautify  
+  可以选择uncrustify作为C/C++的默认beautifier
 ### VSCode
+### Sublime
 ### Source Insight
 ### Dev-C++
-### eclipse
+### Eclipse
 ### JetBrains PyCharm Community Edition
+### Docker
