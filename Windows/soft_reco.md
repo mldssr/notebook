@@ -23,7 +23,8 @@
 ### IrfanView
 ### Vieas
 ### PhotoShop
-### 360压缩
+### Bandizip
+颜值颇高，免费小巧，`自动解压`戳中了我的心。官网：http://www.bandisoft.com/bandizip/
 ### Apowersoft录屏王
 ### CPU-Z
 ### Dism++
