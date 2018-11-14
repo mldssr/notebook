@@ -1,0 +1,962 @@
+    1  cd /tmp
+    2  sh finaltest.sh 
+    3  ls
+    4  ls /opt
+    5  init 0
+    6  ls -a
+    7  ll
+    8  df
+    9  df -H
+   10  pwd
+   11  ping 101.6.6.6
+   12  ping 198.199.113.12
+   13  ifconfig
+   14  /sbin/ppoe-status
+   15  /sbin/pppoe-status
+   16  rpm -qa
+   17  rpm -qa | grep rp-pppoe
+   18  yum install rp-pppoe
+   19  pppoe-setup
+   20  pppoe -V
+   21  ifconfig
+   22  pppoe-setup
+   23  ifconfig
+   24  pppoe-status
+   25  adsl-setup
+   26  service network-manager restart
+   27  ps aux | grep network
+   28  ps aux | grep net
+   29  service network restart
+   30  ifconfig
+   31  vi /etc/sysconfig/network-scripts/ifcfg-eth0
+   32  vi /etc/udev/rules.d/70-persistent-net.rules 
+   33  ifconfig -a
+   34  ls
+   35  df
+   36  df -H
+   37  pwd
+   38  ifconfig
+   39  ls
+   40  exit
+   41  df -H
+   42  ifconfig
+   43  ping www.baidu.com
+   44  ls
+   45  tree Documents/
+   46  tree Downloads/
+   47  vim install.log
+   48  pwd
+   49  df -H
+   50  cd /dec
+   51  cd /dev
+   52  ls
+   53  cd
+   54  vim /etc/bashrc 
+   55  echo $TERM
+   56  echo $PS1
+   57  vim /etc/bashrc 
+   58  vim .bashrc
+   59  ls -a
+   60  vim .bashrc
+   61  vim .bash_profile 
+   62  vim .bashrc
+   63  vim /etc/profile
+   64  tree /etc/profile.d/
+   65  vim .bashrc 
+   66  source .bashrc 
+   67  ls 
+   68  vim .bashrc
+   69  source .bashrc 
+   70  ls 
+   71  ls -F
+   72  ls -F --color=auto
+   73  vim .bashrc
+   74  source .bashrc
+   75  ls
+   76  vim .bashrc
+   77  source .bashrc
+   78  vim .bashrc
+   79  source .bashrc
+   80  ls
+   81  vim .bashrc
+   82  ls /home
+   83  visudo
+   84  vim /etc/sudoers
+   85  ls -l /etc/sudo*
+   86  vim /etc/passwd
+   87  vim /etc/shadow
+   88  vim /etc/group
+   89  useradd lxx
+   90  ls /home
+   91  passwd lxx
+   92  ls ../lxx
+   93  pwd
+   94  cd /home
+   95  ls
+   96  cd lxx
+   97  ls
+   98  vim .bashrc
+   99  vim .bash_profile 
+  100  cat /root/.bashrc 
+  101  cat .bashrc
+  102  cat /root/.bashrc >> .bashrc
+  103  vim .bashrc
+  104  ls -l /etc/sudoers
+  105  chmod u+w /etc/sudoers
+  106  ls -l /etc/sudoers
+  107  vim /etc/sudoers
+  108  chmod u-w /etc/sudoers
+  109  ls -l /etc/sudoers
+  110  cd /etc/yum.repos.d/
+  111  ls
+  112  cd
+  113  vim .bashrc
+  114  source .bashrc
+  115  cd -
+  116  ll
+  117  cat CentOS-Base.repo
+  118  vim CentOS-Base.repo 
+  119  echo $172.24.67.99
+  120  vim CentOS-Base.repo 
+  121  echo $releasever
+  122  ls
+  123  ll
+  124  vim CentOS-Media.repo 
+  125  cat * | grep enabled
+  126  cd /media
+  127  ls
+  128  yum info vim
+  129  ping bt.neu6.edu.cn
+  130  cd
+  131  ifocnfig
+  132  ifconfig
+  133  ls
+  134  pwd
+  135  df -H
+  136  fdisk
+  137  df
+  138  ls
+  139  exit
+  140  ifconfig
+  141  df -H
+  142  cd /media/
+  143  ls
+  144  ls -a
+  145  cd
+  146  vim .bashrc 
+  147  ls
+  148  source .bashrc
+  149  ls
+  150  vim .bashrc
+  151  ls -aF
+  152  exit
+  153  ls
+  154  cd
+  155  ls
+  156  alias -p
+  157  vim .bash_profile 
+  158  vim /etc/bashrc
+  159  vim /etc/profile
+  160  cd /media/
+  161  ls
+  162  ls -a
+  163  exit
+  164  mkdir SAS00
+  165  ls
+  166  mount /dev/sda5 SAS00/
+  167  ll SAS00/
+  168  mkdir HDD00
+  169  ls
+  170  ll HDD00/
+  171  mount /dev/sdb HDD00
+  172  man mount
+  173  exit
+  174  ifconfig
+  175  cd /dev
+  176  ls
+  177  ll | grep sd
+  178  exit
+  179  ls
+  180  poweroff
+  181  cd
+  182  ifconfig
+  183  cd /dec
+  184  cd /dev
+  185  ls
+  186  ls -a
+  187  ll | grep sd
+  188  mount sd5 /media/SAS00/
+  189  df-H
+  190  df -H
+  191  man mount
+  192  mount -t ext3 sd5 /media/SAS00/
+  193  mount /dev/sd5 /media/SAS00/
+  194  mount /dev/sda5 /media/SAS00/
+  195  cd /media/
+  196  ls
+  197  tree .
+  198  cd ..
+  199  ll
+  200  tree mnt
+  201  man ipmitoo;
+  202  man ipmitool
+  203  ifcon
+  204  man ipmi
+  205  exit
+  206  ll
+  207  ls
+  208  ll /dev | grep sd
+  209  exit
+  210  cd /dev
+  211  ls
+  212  ll | grep sd
+  213  ls
+  214  ll | grep sd
+  215  ls
+  216  ll | grep sd
+  217  lsblk
+  218  exit
+  219  man sdparm
+  220  man eject
+  221  cd /dev
+  222  ls
+  223  ll | grep sd*
+  224  ll
+  225  ll | grep sd
+  226  df -H
+  227  tree /media/
+  228  eject -v /dev/sdb
+  229  ll | grep sd
+  230  eject -v /dev/sdc
+  231  eject -v /dev/sdb1
+  232  man scsi-spin
+  233  scsi-spin --force --down /dev/sdc
+  234  udisks --detach /dev/sdb
+  235  udisks --detach /dev/sdc
+  236  udisks --detach /dev/sdd
+  237  cd /sys/block/
+  238  ls
+  239  cd sdb
+  240  ls
+  241  cd device/
+  242  ls
+  243  ll
+  244  cd subsystem/
+  245  pwd
+  246  ls
+  247  cd ..
+  248  ls
+  249  cd power/
+  250  ls
+  251  cat wakeup 
+  252  ll
+  253  cd ..
+  254  cat state
+  255  cat uevent 
+  256  cd vendor 
+  257  cat vendor 
+  258  cat type 
+  259  ls
+  260  cat timeout 
+  261  echo 'offline' > /sys/block/sdb/device/state
+  262  cat state 
+  263  ls
+  264  tree power/
+  265  cat mod
+  266  cat model 
+  267  cat evt_media_change 
+  268  cat evt_soft_threshold_reached 
+  269  cat dh_state 
+  270  cat delete 
+  271  ll delete 
+  272  cat device_blocked 
+  273  cat eh_timeout 
+  274  ls
+  275  cat rescan 
+  276  ll rescan 
+  277  tree scsi_device/
+  278  cat scsi_generic/
+  279  tree scsi_disk/
+  280  tree scsi_generic/
+  281  echo '1' > /sys/block/sdb/device/delete
+  282  ls
+  283  cd ..
+  284  cd /sys/block/
+  285  ls
+  286  ll
+  287  ls
+  288  echo 'offline' > /sys/block/sdc/device/state
+  289  echo '1' > /sys/block/sdc/device/delete
+  290  ls
+  291  echo 'offline' > /sys/block/sdd/device/state
+  292  echo '1' > /sys/block/sdd/device/delete
+  293  echo 'offline' > /sys/block/sde/device/state
+  294  echo '1' > /sys/block/sde/device/delete
+  295  ls
+  296  echo 'offline' > /sys/block/sdf/device/state
+  297  echo '1' > /sys/block/sdh/device/delete
+  298  ls
+  299  echo '1' > /sys/block/sdf/device/delete
+  300  ls
+  301  echo 'offline' > /sys/block/sdi/device/state
+  302  echo '1' > /sys/block/sdi/device/delete
+  303  ls
+  304  cd ..
+  305  ls
+  306  cd power/
+  307  ls
+  308  cat disk 
+  309  cats ta
+  310  cat state 
+  311  tree .
+  312  ll 
+  313  cat disk
+  314  cat *
+  315  cd ..
+  316  ls
+  317  cd dev
+  318  ls
+  319  cd block/
+  320  ls
+  321  ll
+  322  cd ..
+  323  ls
+  324  cd ..
+  325  ls
+  326  cd dev
+  327  cd ../devices/
+  328  ls
+  329  cd pci0000\:00/
+  330  ls
+  331  cat uevent 
+  332  cd power
+  333  ls
+  334  cat wakeup 
+  335  cd ..
+  336  ls
+  337  cd ..
+  338  cd block/
+  339  ls
+  340  exit
+  341  ls
+  342  lsblk
+  343  lsblk -m
+  344  lsblk -l
+  345  lsblk -t
+  346  lsblk -r
+  347  lsblk
+  348  lsblk -s
+  349  lsblk
+  350  lsblk -a
+  351  lsblk -S
+  352  umount /media/SAS00/
+  353  lsblk
+  354  fdisk /dev/sdb
+  355  fdisk -l /dev/sda
+  356  fdisk -l /dev/sdb
+  357  fdisk /dev/sdb
+  358  ls /sbin/mk*
+  359  ll /sbin/mk*
+  360  cd /dev
+  361  blkid sd*
+  362  gdisk -l sda
+  363  gdisk -l sdb
+  364  gdisk -l sdc
+  365  gdisk sdb
+  366  mkfs -t ext3 /dev/sdb
+  367  fdisk -l sda
+  368  df sda
+  369  df -H
+  370  mount sda5 /media/SAS00/
+  371  df -H
+  372  mkfs -t ext3 /dev/sdb
+  373  ls
+  374  ll /media/
+  375  mount sdb /media/HDD00/
+  376  cd /media/HDD00/
+  377  df -H
+  378  fdisk -l /dev/sdb
+  379  fdisk -l /dev/sdc
+  380  cd -
+  381  gdisk -l sdb
+  382  gdisk -l sdc
+  383  fdisk sdb
+  384  umount /media/HDD00/
+  385  df -H
+  386  fdisk sdb
+  387  gdisk -l sdb
+  388  gdisk sdb
+  389  df -H
+  390  gdisk sd*
+  391  gdisk -l sda
+  392  gdisk -l sdb
+  393  mkfs -t ext3 /dev/sdb1
+  394  df -hT
+  395  mount /dev/sdb1 /media/HDD00/
+  396  df -hT
+  397  ll /media/HDD00/
+  398  tree /media/HDD00/
+  399  umount /media/SAS00/
+  400  umount /media/HDD00/
+  401  cd /media/
+  402  ls
+  403  ll
+  404  tree .
+  405  rm -r HDD00/ SAS00/
+  406  ll
+  407  rm -r HDD00/ SAS00/
+  408  ll
+  409  mkdir sas00
+  410  mkdir hdd00
+  411  ll
+  412  mkdir hdd01
+  413  mkdir hdd02
+  414  mkdir hdd03
+  415  mkdir hdd04
+  416  mkdir hdd05
+  417  mkdir hdd06
+  418  mkdir hdd07
+  419  ll
+  420  systemctl status
+  421  man udisks
+  422  man udisksctl
+  423  man udisks
+  424  cd -
+  425  udisks --showinfo sda
+  426  udisks --show-info sda
+  427  udisks --show-info sdb1
+  428  udisks --show-info sda
+  429  udisks --show-info sdb
+  430  udisks --show-info sdc
+  431  cd /dev
+  432  ls
+  433  ll | grep sd
+  434  exit
+  435  cd /sys
+  436  ls
+  437  cd block/
+  438  ls
+  439  ll | grep sd
+  440  ll
+  441  ls
+  442  exit
+  443  reboot
+  444  exit
+  445  cd /sys
+  446  ls
+  447  cd block/
+  448  ls
+  449  tree sdb
+  450  ifconfig
+  451  cd /dev
+  452  ls
+  453  ll | grep sd
+  454  cd /sys
+  455  ls
+  456  cd devices/
+  457  ls
+  458  cd pci0000\:00
+  459  ls
+  460  cd power/
+  461  ls
+  462  cat wakeup 
+  463  cd .
+  464  cd ..
+  465  cd power/
+  466  ls
+  467  cat disk
+  468  cat *
+  469  cd ..
+  470  ls
+  471  cd block/
+  472  ls
+  473  cd sdb
+  474  ls
+  475  cat
+  476  cat *
+  477  cd power/
+  478  ls
+  479  cat *
+  480  cd ..
+  481  ls
+  482  cat dev
+  483  cd device/
+  484  ls
+  485  pwd
+  486  cd block/
+  487  pwd
+  488  cd ..
+  489  ls
+  490  ll device/
+  491  ls
+  492  ll | grep device
+  493  cd
+  494  poweroff
+  495  ifconfig
+  496  cd /drv
+  497  cd /dev
+  498  ls
+  499  ll | grep sd
+  500  history
+  501  history | grep echo
+  502  cd /proc
+  503  ls
+  504  cat devices 
+  505  dmesg
+  506  dmesg | grep sdb
+  507  cd -
+  508  cd /sys
+  509  ll
+  510  cd block/
+  511  ls
+  512  readlink sda
+  513  cd ../devices/
+  514  ls
+  515  cd pci0000\:00
+  516  ls
+  517  cd /sys/block/
+  518  ls
+  519  ll sda
+  520  readlink sda
+  521  ls
+  522  ll sd*
+  523  ls
+  524  ll sd*
+  525  ll ram0
+  526  cd /dev
+  527  ls
+  528  cd block/
+  529  ls
+  530  exit
+  531  cd /proc
+  532  ls
+  533  cd scsi/
+  534  ll
+  535  cat scsi 
+  536  cd /sys
+  537  ls
+  538  tree class
+  539  ls
+  540  cd devices/
+  541  ls
+  542  cd pci0000\:00
+  543  ls
+  544  tree pci_bus/
+  545  cd 0000\:00\:01.0/
+  546  ls
+  547  tree .
+  548  ls
+  549  cd 0000\:01\:00.0/
+  550  ls
+  551  cd host0/
+  552  ls
+  553  cd phy-0\:
+  554  cd phy-0\:0/
+  555  ls
+  556  tree
+  557  cat uevent 
+  558  cat power/wakeup 
+  559  cd sas_phy/
+  560  ls'
+  561  ls
+  562  cd phy-0\:0/
+  563  ls
+  564  cat *
+  565  ll
+  566  cat *
+  567  cd power/
+  568  ls
+  569  cat wakeup 
+  570  lssd
+  571  fdisk -l
+  572  ls pci
+  573  lspci
+  574  lspci | grep Fibre
+  575  ls -l /sys/class/scsi_host
+  576  lsscsi
+  577  man lsscsi
+  578  echo "- - -" > /sys/class/scsi_host/host0/scan 
+  579  ls /dev/sd*
+  580  cat /sys/class/scsi_host/host0/scan 
+  581  ll /sys/class/scsi_host/host0/scan 
+  582  lsscsi
+  583  echo "- - -" > /sys/class/scsi_host/host0/scan
+  584  lsscsi
+  585  ls
+  586  cd ..
+  587  ls
+  588  readline device
+  589  readlink device
+  590  cd ..
+  591  ls
+  592  cs ..
+  593  cd ..
+  594  ls
+  595  cat uevent 
+  596  cd sas_phy/
+  597  ls
+  598  cd phy-0\:0/
+  599  ls
+  600  ll
+  601  cat enable 
+  602  echo "- - -" > /sys/class/scsi_host/host0/scan
+  603  ll sd* /sys/block/
+  604  cd
+  605  reboot
+  606  cd /sys
+  607  ls
+  608  ll block
+  609  cd block/
+  610  ls
+  611  cd sda
+  612  ls
+  613  cd cd devi
+  614  cd cd device/
+  615  ls
+  616  cd device/
+  617  ls
+  618  exit
+  619  cd /sys
+  620  echo "- - -" > /sys/class/scsi_host/host0/scan 
+  621  cd block/
+  622  ls
+  623  exit
+  624  poweroff
+  625  cd 
+  626  ifconfig
+  627  exit
+  628  cd /dev
+  629  ls
+  630  echo "- - -" > /sys/class/scsi_host/host0/scan
+  631  lsscsi
+  632  ll | grep sd
+  633  lsmod | grep ipmi
+  634  exit
+  635  cd de
+  636  cd 
+  637  cd /dev
+  638  ls
+  639  ll | grep sd
+  640  cd .
+  641  poweroff
+  642  ifconfig
+  643  cd /dev
+  644  ll | grep sd
+  645  ifconfig
+  646  exit
+  647  ifconfig
+  648  ifconfig -a
+  649  ipmitool help
+  650  ipmitool -v
+  651  ipmitool lan
+  652  ipmitool  -I open lan print
+  653  exit
+  654  pwd
+  655  ls /home
+  656  exit
+  657  ipconfig
+  658  ifconfig
+  659  ls /dev 
+  660  ll /dev | grep sd
+  661  ps aux | grep ipmi
+  662  ifconfig
+  663  ipmitool
+  664  ipmitool lan
+  665  ipmitool lan print
+  666  ifconfig
+  667  ls
+  668  yum grouplist | more
+  669  yum grouplist
+  670  yum install tigervnc-server
+  671  vim /etc/sysconfig/vncservers 
+  672  vim /etc/sysconfig/iptables
+  673  vim /etc/sysconfig/iptables-config 
+  674  ps aux | grep vnc
+  675  vim /etc/sysconfig/vncservers 
+  676  vncpasswd
+  677  vim /etc/sysconfig/iptables
+  678  nvcserver --help
+  679  nvcserver :1
+  680  vncserver :1
+  681  nvcserver :1
+  682  vncserver :1
+  683  vim /etc/sysconfig/vncservers 
+  684  vncserver :1
+  685  ipmipower
+  686  yum install tigervnc-server
+  687  vncpasswd
+  688  vim /etc/sysconfig/vncservers 
+  689  vncpassed
+  690  vncpasswd
+  691  startx
+  692  systemctlsystem
+  693  systemctl start vncserver.service
+  694  service 
+  695  service vncserver
+  696  service vncserver status
+  697  service vncserver status start
+  698  vncserver "2
+  699  vncserver :2
+  700  rm /tmp/.X2-lock
+  701  vncserver :2
+  702  rm /tmp/.X11-unix/X2
+  703  vncserver :2
+  704  vncserver
+  705  tcpdump port 5902
+  706  tcpdump port 5903
+  707  yum update libXfont
+  708  vncserver :2
+  709  service vncserver restart
+  710  exit
+  711  poweroff
+  712  ifconfig
+  713  ls
+  714  vim .bashrc
+  715  exit
+  716  ls
+  717  cd Desktop/
+  718  ls
+  719  ll
+  720  rm untitled\ folder/
+  721  rm untitled\ folder/ -r
+  722  ls
+  723  ll
+  724  cd Desktop/
+  725  ls
+  726  ll
+  727  ipmitool
+  728  ipmitool ;an
+  729  ipmitool lan
+  730  ipmitool lan print
+  731  yum install ipmitool
+  732  ipmitool user list 1
+  733  ipmitool print
+  734  ipmitool user
+  735  ipmitool user list
+  736  ipmitool user list 1
+  737  ipmitool user list 2
+  738  ipmitool user list 14
+  739  ipmitool lan
+  740  ipmitool lan print 1
+  741  ipmitool lan print 
+  742  ipmitool
+  743  ipmitool sel
+  744  ipmitool sel list
+  745  ipmitool sel list > sel.log
+  746  ls
+  747  mv sel.log Desktop/
+  748  cd Desktop/
+  749  ls
+  750  vim sel.log 
+  751  ipmitool 
+  752  ipmitool chassis 
+  753  ipmitool chassis  status
+  754  ipmitool mc
+  755  ipmitool mc info
+  756  ipmitool sdr
+  757  ipmitool 
+  758  ipmitool sensor
+  759  ipmitool 
+  760  ipmitool fru
+  761  ipmitool gendev
+  762  ipmitool gendev list
+  763  service ipmi status
+  764  ipmitool fru
+  765  ipmitool sensor
+  766  ipmitool
+  767  ipmitool sensor get FH1
+  768  ipmitool sensor thresh
+  769  ls
+  770  cd /dev
+  771  ls
+  772  ll sd*
+  773  cd /dev
+  774  ls
+  775  ll sd*
+  776  cd /media
+  777  tree
+  778  df -h
+  779  ll
+  780  tree -a
+  781  ifconfig
+  782  ping -6 2403:ac00:0:4001::2:8294
+  783  ping6 2403:ac00:0:4001::2:8294
+  784  man hdparm
+  785  exit
+  786  man hdpamr
+  787  man hdparm
+  788  exit
+  789  df -h
+  790  fdisk -l
+  791  gdisk
+  792  cd /deb
+  793  cd /dev
+  794  ls
+  795  ls /mnt
+  796  ll /mnt
+  797  ll /media
+  798  tree /media
+  799  ls /sbin/mk*
+  800  mkfs -t ext4 /dev/sdc
+  801  blkid sdc
+  802  blkid sdb
+  803  blkid sdb1
+  804  mout -t ext4 /dev/sdc /hdd02
+  805  mount -t ext4 /dev/sdc /hdd02
+  806  mount -t ext4 /dev/sdc /media/hdd02
+  807  umout /dev/sdc
+  808  umount /dev/sdc
+  809  fdisk -l
+  810  fdisk -l sdb
+  811  gdisk -l
+  812  gdisk -l sdb
+  813  fidks
+  814  fdisk
+  815  fdisk -CHS -l sdb
+  816  gdisk -CHS
+  817  gdisk -CHS sdb
+  818  gdisk -CHS -l sdb
+  819  gdisk -l
+  820  gdisk
+  821  ls
+  822  ll sd
+  823  ll sd*
+  824  cd disk
+  825  ll
+  826  cd by-path/
+  827  ll
+  828  cd ..
+  829  tree 
+  830  cd ..
+  831  hdparm sdb
+  832  hdparm sdc
+  833  hdparm sd*
+  834  gdisk sdb
+  835  mkfs -t ext4 /dev/sdb
+  836  hdparm sdb
+  837  hdparm sdb*
+  838  hdparm sdc*
+  839  gdisk -l sdb
+  840  gdisk -l sdb
+  841  gdisk -l sdb1
+  842  df -h
+  843  ls
+  844  hdparm -a
+  845  hdparm -C
+  846  hdparm -g
+  847  hdparm -g sdb
+  848  hdparm -g sdc
+  849  hdparm -g sd[bcde]
+  850  hdparm sd[bcde] -C
+  851  hdparm -c sdb
+  852  hdparm -C sdb
+  853  hdparmi-C sdb
+  854  hdparm -i sdb
+  855  hdparm -I sdb
+  856  hdparm
+  857  hdparm sdb
+  858  hdparm sdb -g
+  859  hdparm -g sdb
+  860  hdparm -T sdb
+  861  ls
+  862  ll kmsg
+  863  kk .udev/
+  864  ll .udev/
+  865  hdparm -C sdb
+  866  hdparm -m
+  867  hdparm -m sdb
+  868  hdparm -m
+  869  man hdparm
+  870  exit
+  871  lsscsi
+  872  lsblk
+  873  hdparm -C /dev/sdb
+  874  cd /dev
+  875  ll
+  876  ls
+  877  exit
+  878  man hdparm
+  879  exit
+  880  cd /dev
+  881  ls
+  882  hdparm -C sdb
+  883  hdparm -C sdc
+  884  hdparm -C sd*
+  885  hdparm -C sda
+  886  hdparm -C sd[bcdefghi]
+  887  hdparm -S sdd
+  888  hdparm -S sdb 6
+  889  hdparm -S 6 sdb
+  890  hdparm -C sd[bcdefghi]
+  891  hdparm -S 6 sdd
+  892  hdparm -C sd[bcdefghi]
+  893  hdparm -v sdd
+  894  hdparm -S sdd
+  895  hdparm  sdd
+  896  dmesg | grep -i sata | grep 'link up'
+  897  dmesg | grep -i sata
+  898  ls
+  899  hdparm -C sd[bcdefghi]
+  900  ll sd*
+  901  gdisk sdb
+  902  hdparm -C sd[bcdefghi]
+  903  hdparm -Y sde
+  904  hdparm -C sd[bcdefghi]
+  905  hdparm -S 6 sdd
+  906  hdparm -C sd[bcdefghi]
+  907  hdparm -y sdd
+  908  hdparm -C sd[bcdefghi]
+  909  hdparm -y sdc
+  910  hdparm -C sd[bcdefghi]
+  911  hdparm -y sd[bcdefghi]
+  912  hdparm -C sd[bcdefghi]
+  913  dmesg | grep -i sata
+  914  dmesg
+  915  dmesg | wc -l
+  916  dmesg | grep -i sata
+  917  hdparm -C sd[bcdefghi]
+  918  hdparm -y 60 sd[bcdefghi]
+  919  hdparm -S 60 sd[bcdefghi]
+  920  hdparm -C sd[bcdefghi]
+  921  hdparm -i sdb
+  922  hdparm -C sd[bcdefghi]
+  923  hdparm -I sdb
+  924  hdparm -C sd[bcdefghi]
+  925  hdparm -B sdb
+  926  hdparm -C sd[bcdefghi]
+  927  hdparm -B sd[bcdefghi]
+  928  hdparm -B 50 sd[bcdefghi]
+  929  hdparm -C sd[bcdefghi]
+  930  hdparm -v
+  931  hdparm -v sdb
+  932  hdparm -V
+  933  exit
+  934  cd /media
+  935  tree
+  936  man hdparm
+  937  ls
+  938  exit
+  939  cd /media
+  940  tree -a
+  941  cd
+  942  ls
+  943  mkdir lxx
+  944  cat install.log
+  945  ls
+  946  cd lxx
+  947  ls
+  948  dmesg > dmesg.log
+  949  vim dmesg.log 
+  950  dmesg | grep -i sata
+  951  dmesg | grep -i scsi
+  952  dmesg | grep -i sata
+  953  ipmitool
+  954  ipmitool sdr
+  955  ipmitool sdr elist
+  956  ipmitool sdr elist | grep Watts
+  957  exit
+  958  history
+  959  ls
+  960  cd lxx
+  961  ls
+  962  history > useful_cmd
